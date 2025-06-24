@@ -1,0 +1,156 @@
+Comprehensive PyTorch Model Analyzer
+Enterprise-Grade Performance & Energy Instrumentation
+================================================================================
+[LOADING PYTORCH MODEL FOR COMPREHENSIVE ANALYSIS]
+File: ../../resnet18_pretrained.pt
+[SUCCESS] PyTorch model loaded
+Graph nodes: 23
+
+[EXTRACTING COMPREHENSIVE PARAMETER ANALYSIS]
+Analyzed parameter: conv1.weight Shape: [64, 3, 7, 7] Sparsity: 29.40%
+Analyzed parameter: bn1.weight Shape: [64] Sparsity: 9.38%
+Analyzed parameter: bn1.bias Shape: [64] Sparsity: 7.81%
+Analyzed parameter: layer1.0.conv1.weight Shape: [64, 64, 3, 3] Sparsity: 12.70%
+Analyzed parameter: layer1.0.bn1.weight Shape: [64] Sparsity: 0.00%
+Analyzed parameter: layer1.0.bn1.bias Shape: [64] Sparsity: 0.00%
+Analyzed parameter: layer1.0.conv2.weight Shape: [64, 64, 3, 3] Sparsity: 0.00%
+Analyzed parameter: layer1.0.bn2.weight Shape: [64] Sparsity: 0.00%
+Analyzed parameter: layer1.0.bn2.bias Shape: [64] Sparsity: 0.00%
+Analyzed parameter: layer1.1.conv1.weight Shape: [64, 64, 3, 3] Sparsity: 0.00%
+Analyzed parameter: layer1.1.bn1.weight Shape: [64] Sparsity: 0.00%
+Analyzed parameter: layer1.1.bn1.bias Shape: [64] Sparsity: 0.00%
+Analyzed parameter: layer1.1.conv2.weight Shape: [64, 64, 3, 3] Sparsity: 0.00%
+Analyzed parameter: layer1.1.bn2.weight Shape: [64] Sparsity: 0.00%
+Analyzed parameter: layer1.1.bn2.bias Shape: [64] Sparsity: 0.00%
+Analyzed parameter: layer2.0.conv1.weight Shape: [128, 64, 3, 3] Sparsity: 0.00%
+Analyzed parameter: layer2.0.bn1.weight Shape: [128] Sparsity: 0.00%
+Analyzed parameter: layer2.0.bn1.bias Shape: [128] Sparsity: 0.00%
+Analyzed parameter: layer2.0.conv2.weight Shape: [128, 128, 3, 3] Sparsity: 0.00%
+Analyzed parameter: layer2.0.bn2.weight Shape: [128] Sparsity: 0.00%
+Analyzed parameter: layer2.0.bn2.bias Shape: [128] Sparsity: 0.00%
+Analyzed parameter: layer2.0.downsample.0.weight Shape: [128, 64, 1, 1] Sparsity: 0.00%
+Analyzed parameter: layer2.0.downsample.1.weight Shape: [128] Sparsity: 0.00%
+Analyzed parameter: layer2.0.downsample.1.bias Shape: [128] Sparsity: 0.00%
+Analyzed parameter: layer2.1.conv1.weight Shape: [128, 128, 3, 3] Sparsity: 0.00%
+Analyzed parameter: layer2.1.bn1.weight Shape: [128] Sparsity: 0.00%
+Analyzed parameter: layer2.1.bn1.bias Shape: [128] Sparsity: 0.00%
+Analyzed parameter: layer2.1.conv2.weight Shape: [128, 128, 3, 3] Sparsity: 0.00%
+Analyzed parameter: layer2.1.bn2.weight Shape: [128] Sparsity: 0.00%
+Analyzed parameter: layer2.1.bn2.bias Shape: [128] Sparsity: 0.00%
+Analyzed parameter: layer3.0.conv1.weight Shape: [256, 128, 3, 3] Sparsity: 0.00%
+Analyzed parameter: layer3.0.bn1.weight Shape: [256] Sparsity: 0.00%
+Analyzed parameter: layer3.0.bn1.bias Shape: [256] Sparsity: 0.00%
+Analyzed parameter: layer3.0.conv2.weight Shape: [256, 256, 3, 3] Sparsity: 0.10%
+Analyzed parameter: layer3.0.bn2.weight Shape: [256] Sparsity: 0.00%
+Analyzed parameter: layer3.0.bn2.bias Shape: [256] Sparsity: 0.00%
+Analyzed parameter: layer3.0.downsample.0.weight Shape: [256, 128, 1, 1] Sparsity: 0.00%
+Analyzed parameter: layer3.0.downsample.1.weight Shape: [256] Sparsity: 0.00%
+Analyzed parameter: layer3.0.downsample.1.bias Shape: [256] Sparsity: 0.00%
+Analyzed parameter: layer3.1.conv1.weight Shape: [256, 256, 3, 3] Sparsity: 0.00%
+Analyzed parameter: layer3.1.bn1.weight Shape: [256] Sparsity: 0.00%
+Analyzed parameter: layer3.1.bn1.bias Shape: [256] Sparsity: 0.00%
+Analyzed parameter: layer3.1.conv2.weight Shape: [256, 256, 3, 3] Sparsity: 0.00%
+Analyzed parameter: layer3.1.bn2.weight Shape: [256] Sparsity: 0.00%
+Analyzed parameter: layer3.1.bn2.bias Shape: [256] Sparsity: 0.00%
+Analyzed parameter: layer4.0.conv1.weight Shape: [512, 256, 3, 3] Sparsity: 0.00%
+Analyzed parameter: layer4.0.bn1.weight Shape: [512] Sparsity: 0.00%
+Analyzed parameter: layer4.0.bn1.bias Shape: [512] Sparsity: 0.00%
+Analyzed parameter: layer4.0.conv2.weight Shape: [512, 512, 3, 3] Sparsity: 0.00%
+Analyzed parameter: layer4.0.bn2.weight Shape: [512] Sparsity: 0.00%
+Analyzed parameter: layer4.0.bn2.bias Shape: [512] Sparsity: 0.00%
+Analyzed parameter: layer4.0.downsample.0.weight Shape: [512, 256, 1, 1] Sparsity: 0.00%
+Analyzed parameter: layer4.0.downsample.1.weight Shape: [512] Sparsity: 0.00%
+Analyzed parameter: layer4.0.downsample.1.bias Shape: [512] Sparsity: 0.00%
+Analyzed parameter: layer4.1.conv1.weight Shape: [512, 512, 3, 3] Sparsity: 0.00%
+Analyzed parameter: layer4.1.bn1.weight Shape: [512] Sparsity: 0.00%
+Analyzed parameter: layer4.1.bn1.bias Shape: [512] Sparsity: 0.00%
+Analyzed parameter: layer4.1.conv2.weight Shape: [512, 512, 3, 3] Sparsity: 0.00%
+Analyzed parameter: layer4.1.bn2.weight Shape: [512] Sparsity: 0.00%
+Analyzed parameter: layer4.1.bn2.bias Shape: [512] Sparsity: 0.00%
+Analyzed parameter: fc.weight Shape: [1000, 512] Sparsity: 0.00%
+Analyzed parameter: fc.bias Shape: [1000] Sparsity: 0.00%
+Comprehensive parameter analysis complete: 62 parameters
+
+[PARSING COMPREHENSIVE COMPUTATION GRAPH]
+Analyzed: Reshape_1 (aten::flatten) FLOPs: 0 Params: 0 Memory: 0.00 MB
+Comprehensive graph analysis complete: 1 computational nodes
+
+[COMPREHENSIVE MODEL ANALYSIS REPORT]
+====================================================================================================
+
+[ARCHITECTURE SUMMARY]
+--------------------------------------------------
+Layer Distribution:
+          Reshape:    1 layers
+
+Architecture Classification: Custom Architecture
+
+[PARAMETER ANALYSIS]
+--------------------------------------------------
+Total Parameters: 11689512
+Parameter Memory: 44.59 MB
+Average Sparsity: 0.96%
+
+Largest Parameter Tensors:
+           layer4.1.conv2.weight: 2359296 parameters
+           layer4.1.conv1.weight: 2359296 parameters
+           layer4.0.conv2.weight: 2359296 parameters
+           layer4.0.conv1.weight: 1179648 parameters
+           layer3.1.conv2.weight: 589824 parameters
+
+[COMPUTATIONAL ANALYSIS]
+--------------------------------------------------
+Total Theoretical FLOPs: 0
+Total Memory Operations: 0
+
+FLOP Distribution by Operation Type:
+
+[MEMORY ANALYSIS]
+--------------------------------------------------
+Total Activation Memory: 0.00 MB
+Peak Memory Usage: 0.00 MB
+
+[OPTIMIZATION RECOMMENDATIONS]
+--------------------------------------------------
+  * Memory-bound operation - consider data layout optimization
+
+General Optimization Opportunities:
+  * Consider quantization to reduce memory footprint
+
+[PREPARING COMPREHENSIVE INFERENCE ANALYSIS]
+All metrics will be captured at maximum detail...
+
+[EXECUTING COMPREHENSIVE INFERENCE WITH DETAILED PROFILING]
+
+[DETECTING INPUT SHAPES FROM MODEL STRUCTURE]
+Performing intelligent shape inference...
+Inferred vision model input: [1, 3, 224, 224]
+Using dynamically detected input shape: [1, 3, 224, 224]
+Executing with node-by-node detailed profiling...
+[SUCCESS] Comprehensive inference completed in 79.626 ms
+Output shape: [1, 1000]
+
+[INFERENCE RESULTS SUMMARY]
+Output tensor shape: [1, 1000]
+First 10 output values:  0.6208
+ 2.6801
+ 2.4551
+ 2.7238
+ 4.2485
+ 3.8433
+ 4.0894
+ 0.5654
+-0.5597
+-0.3402
+[ CPUFloatType{10} ]
+
+[SAVING COMPREHENSIVE ANALYSIS REPORT]
+[SUCCESS] Comprehensive analysis report saved to: comprehensive_model_analysis.txt
+
+[SUCCESS] Comprehensive analysis completed!
+Model analyzed with enterprise-grade instrumentation:
+  * Complete parameter statistical analysis
+  * Node-by-node performance metrics
+  * Energy consumption and efficiency analysis
+  * Memory usage patterns and optimization opportunities
+  * Production-ready for complex models (DETR, Transformers, etc.)

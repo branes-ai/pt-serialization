@@ -1,0 +1,658 @@
+COMPREHENSIVE PYTORCH MODEL ANALYSIS REPORT
+================================================================================
+
+EXECUTIVE SUMMARY
+----------------------------------------
+Total Parameters: 62
+Computational Nodes: 1
+Inference Time: 79.621 ms
+Energy Consumption: 7.962e-05 J
+
+DETAILED PARAMETER ANALYSIS
+----------------------------------------
+Parameter: bn1.bias
+  Shape: [64]
+  Elements: 64
+  Memory: 0.00 MB
+  Sparsity: 7.81%
+  L1 Norm: 1.887e+01
+  L2 Norm: 2.780e+00
+  Entropy: 4.418
+  Compressibility Score: 0.156
+
+Parameter: bn1.weight
+  Shape: [64]
+  Elements: 64
+  Memory: 0.00 MB
+  Sparsity: 9.38%
+  L1 Norm: 1.648e+01
+  L2 Norm: 2.281e+00
+  Entropy: 4.191
+  Compressibility Score: 0.125
+
+Parameter: conv1.weight
+  Shape: [64, 3, 7, 7]
+  Elements: 9408
+  Memory: 0.04 MB
+  Sparsity: 29.40%
+  L1 Norm: 6.726e+01
+  L2 Norm: 3.950e+00
+  Entropy: 3.428
+  Compressibility Score: 0.413
+
+Parameter: fc.bias
+  Shape: [1000]
+  Elements: 1000
+  Memory: 0.00 MB
+  Sparsity: 0.00%
+  L1 Norm: 1.278e+01
+  L2 Norm: 5.035e-01
+  Entropy: 4.852
+  Compressibility Score: 0.078
+
+Parameter: fc.weight
+  Shape: [1000, 512]
+  Elements: 512000
+  Memory: 1.95 MB
+  Sparsity: 0.00%
+  L1 Norm: 5.158e+01
+  L2 Norm: 2.227e+00
+  Entropy: 4.539
+  Compressibility Score: 0.092
+
+Parameter: layer1.0.bn1.bias
+  Shape: [64]
+  Elements: 64
+  Memory: 0.00 MB
+  Sparsity: 0.00%
+  L1 Norm: 1.080e+01
+  L2 Norm: 1.686e+00
+  Entropy: 4.891
+  Compressibility Score: 0.109
+
+Parameter: layer1.0.bn1.weight
+  Shape: [64]
+  Elements: 64
+  Memory: 0.00 MB
+  Sparsity: 0.00%
+  L1 Norm: 2.173e+01
+  L2 Norm: 2.892e+00
+  Entropy: 4.691
+  Compressibility Score: 0.000
+
+Parameter: layer1.0.bn2.bias
+  Shape: [64]
+  Elements: 64
+  Memory: 0.00 MB
+  Sparsity: 0.00%
+  L1 Norm: 1.009e+01
+  L2 Norm: 1.596e+00
+  Entropy: 4.947
+  Compressibility Score: 0.125
+
+Parameter: layer1.0.bn2.weight
+  Shape: [64]
+  Elements: 64
+  Memory: 0.00 MB
+  Sparsity: 0.00%
+  L1 Norm: 2.132e+01
+  L2 Norm: 2.836e+00
+  Entropy: 4.617
+  Compressibility Score: 0.000
+
+Parameter: layer1.0.conv1.weight
+  Shape: [64, 64, 3, 3]
+  Elements: 36864
+  Memory: 0.14 MB
+  Sparsity: 12.70%
+  L1 Norm: 3.559e+01
+  L2 Norm: 1.920e+00
+  Entropy: 3.247
+  Compressibility Score: 0.245
+
+Parameter: layer1.0.conv2.weight
+  Shape: [64, 64, 3, 3]
+  Elements: 36864
+  Memory: 0.14 MB
+  Sparsity: 0.00%
+  L1 Norm: 2.948e+01
+  L2 Norm: 1.313e+00
+  Entropy: 4.045
+  Compressibility Score: 0.111
+
+Parameter: layer1.1.bn1.bias
+  Shape: [64]
+  Elements: 64
+  Memory: 0.00 MB
+  Sparsity: 0.00%
+  L1 Norm: 9.354e+00
+  L2 Norm: 1.474e+00
+  Entropy: 4.935
+  Compressibility Score: 0.062
+
+Parameter: layer1.1.bn1.weight
+  Shape: [64]
+  Elements: 64
+  Memory: 0.00 MB
+  Sparsity: 0.00%
+  L1 Norm: 2.104e+01
+  L2 Norm: 2.689e+00
+  Entropy: 4.967
+  Compressibility Score: 0.000
+
+Parameter: layer1.1.bn2.bias
+  Shape: [64]
+  Elements: 64
+  Memory: 0.00 MB
+  Sparsity: 0.00%
+  L1 Norm: 7.816e+00
+  L2 Norm: 1.247e+00
+  Entropy: 4.906
+  Compressibility Score: 0.031
+
+Parameter: layer1.1.bn2.weight
+  Shape: [64]
+  Elements: 64
+  Memory: 0.00 MB
+  Sparsity: 0.00%
+  L1 Norm: 2.512e+01
+  L2 Norm: 3.386e+00
+  Entropy: 4.672
+  Compressibility Score: 0.000
+
+Parameter: layer1.1.conv1.weight
+  Shape: [64, 64, 3, 3]
+  Elements: 36864
+  Memory: 0.14 MB
+  Sparsity: 0.00%
+  L1 Norm: 3.263e+01
+  L2 Norm: 1.447e+00
+  Entropy: 4.105
+  Compressibility Score: 0.099
+
+Parameter: layer1.1.conv2.weight
+  Shape: [64, 64, 3, 3]
+  Elements: 36864
+  Memory: 0.14 MB
+  Sparsity: 0.00%
+  L1 Norm: 2.582e+01
+  L2 Norm: 1.132e+00
+  Entropy: 4.147
+  Compressibility Score: 0.102
+
+Parameter: layer2.0.bn1.bias
+  Shape: [128]
+  Elements: 128
+  Memory: 0.00 MB
+  Sparsity: 0.00%
+  L1 Norm: 1.359e+01
+  L2 Norm: 1.446e+00
+  Entropy: 4.043
+  Compressibility Score: 0.039
+
+Parameter: layer2.0.bn1.weight
+  Shape: [128]
+  Elements: 128
+  Memory: 0.00 MB
+  Sparsity: 0.00%
+  L1 Norm: 4.050e+01
+  L2 Norm: 3.609e+00
+  Entropy: 4.585
+  Compressibility Score: 0.000
+
+Parameter: layer2.0.bn2.bias
+  Shape: [128]
+  Elements: 128
+  Memory: 0.00 MB
+  Sparsity: 0.00%
+  L1 Norm: 9.275e+00
+  L2 Norm: 1.019e+00
+  Entropy: 4.962
+  Compressibility Score: 0.039
+
+Parameter: layer2.0.bn2.weight
+  Shape: [128]
+  Elements: 128
+  Memory: 0.00 MB
+  Sparsity: 0.00%
+  L1 Norm: 4.193e+01
+  L2 Norm: 3.910e+00
+  Entropy: 5.156
+  Compressibility Score: 0.000
+
+Parameter: layer2.0.conv1.weight
+  Shape: [128, 64, 3, 3]
+  Elements: 73728
+  Memory: 0.28 MB
+  Sparsity: 0.00%
+  L1 Norm: 2.770e+01
+  L2 Norm: 1.220e+00
+  Entropy: 4.494
+  Compressibility Score: 0.096
+
+Parameter: layer2.0.conv2.weight
+  Shape: [128, 128, 3, 3]
+  Elements: 147456
+  Memory: 0.56 MB
+  Sparsity: 0.00%
+  L1 Norm: 1.836e+01
+  L2 Norm: 8.594e-01
+  Entropy: 3.711
+  Compressibility Score: 0.107
+
+Parameter: layer2.0.downsample.0.weight
+  Shape: [128, 64, 1, 1]
+  Elements: 8192
+  Memory: 0.03 MB
+  Sparsity: 0.00%
+  L1 Norm: 4.794e+01
+  L2 Norm: 2.393e+00
+  Entropy: 3.754
+  Compressibility Score: 0.128
+
+Parameter: layer2.0.downsample.1.bias
+  Shape: [128]
+  Elements: 128
+  Memory: 0.00 MB
+  Sparsity: 0.00%
+  L1 Norm: 9.275e+00
+  L2 Norm: 1.019e+00
+  Entropy: 4.962
+  Compressibility Score: 0.039
+
+Parameter: layer2.0.downsample.1.weight
+  Shape: [128]
+  Elements: 128
+  Memory: 0.00 MB
+  Sparsity: 0.00%
+  L1 Norm: 2.498e+01
+  L2 Norm: 2.487e+00
+  Entropy: 4.782
+  Compressibility Score: 0.008
+
+Parameter: layer2.1.bn1.bias
+  Shape: [128]
+  Elements: 128
+  Memory: 0.00 MB
+  Sparsity: 0.00%
+  L1 Norm: 2.691e+01
+  L2 Norm: 2.636e+00
+  Entropy: 4.589
+  Compressibility Score: 0.000
+
+Parameter: layer2.1.bn1.weight
+  Shape: [128]
+  Elements: 128
+  Memory: 0.00 MB
+  Sparsity: 0.00%
+  L1 Norm: 4.112e+01
+  L2 Norm: 3.674e+00
+  Entropy: 4.817
+  Compressibility Score: 0.000
+
+Parameter: layer2.1.bn2.bias
+  Shape: [128]
+  Elements: 128
+  Memory: 0.00 MB
+  Sparsity: 0.00%
+  L1 Norm: 2.151e+01
+  L2 Norm: 2.312e+00
+  Entropy: 4.866
+  Compressibility Score: 0.039
+
+Parameter: layer2.1.bn2.weight
+  Shape: [128]
+  Elements: 128
+  Memory: 0.00 MB
+  Sparsity: 0.00%
+  L1 Norm: 3.621e+01
+  L2 Norm: 3.496e+00
+  Entropy: 5.036
+  Compressibility Score: 0.000
+
+Parameter: layer2.1.conv1.weight
+  Shape: [128, 128, 3, 3]
+  Elements: 147456
+  Memory: 0.56 MB
+  Sparsity: 0.00%
+  L1 Norm: 2.512e+01
+  L2 Norm: 1.169e+00
+  Entropy: 3.882
+  Compressibility Score: 0.126
+
+Parameter: layer2.1.conv2.weight
+  Shape: [128, 128, 3, 3]
+  Elements: 147456
+  Memory: 0.56 MB
+  Sparsity: 0.00%
+  L1 Norm: 1.700e+01
+  L2 Norm: 7.209e-01
+  Entropy: 4.383
+  Compressibility Score: 0.079
+
+Parameter: layer3.0.bn1.bias
+  Shape: [256]
+  Elements: 256
+  Memory: 0.00 MB
+  Sparsity: 0.00%
+  L1 Norm: 3.240e+01
+  L2 Norm: 2.361e+00
+  Entropy: 4.682
+  Compressibility Score: 0.008
+
+Parameter: layer3.0.bn1.weight
+  Shape: [256]
+  Elements: 256
+  Memory: 0.00 MB
+  Sparsity: 0.00%
+  L1 Norm: 7.994e+01
+  L2 Norm: 5.040e+00
+  Entropy: 4.659
+  Compressibility Score: 0.000
+
+Parameter: layer3.0.bn2.bias
+  Shape: [256]
+  Elements: 256
+  Memory: 0.00 MB
+  Sparsity: 0.00%
+  L1 Norm: 1.762e+01
+  L2 Norm: 1.501e+00
+  Entropy: 4.867
+  Compressibility Score: 0.090
+
+Parameter: layer3.0.bn2.weight
+  Shape: [256]
+  Elements: 256
+  Memory: 0.00 MB
+  Sparsity: 0.00%
+  L1 Norm: 8.198e+01
+  L2 Norm: 5.265e+00
+  Entropy: 4.664
+  Compressibility Score: 0.000
+
+Parameter: layer3.0.conv1.weight
+  Shape: [256, 128, 3, 3]
+  Elements: 294912
+  Memory: 1.12 MB
+  Sparsity: 0.00%
+  L1 Norm: 2.039e+01
+  L2 Norm: 8.900e-01
+  Entropy: 4.075
+  Compressibility Score: 0.112
+
+Parameter: layer3.0.conv2.weight
+  Shape: [256, 256, 3, 3]
+  Elements: 589824
+  Memory: 2.25 MB
+  Sparsity: 0.10%
+  L1 Norm: 1.931e+01
+  L2 Norm: 7.830e-01
+  Entropy: 4.593
+  Compressibility Score: 0.079
+
+Parameter: layer3.0.downsample.0.weight
+  Shape: [256, 128, 1, 1]
+  Elements: 32768
+  Memory: 0.12 MB
+  Sparsity: 0.00%
+  L1 Norm: 2.600e+01
+  L2 Norm: 1.070e+00
+  Entropy: 4.499
+  Compressibility Score: 0.094
+
+Parameter: layer3.0.downsample.1.bias
+  Shape: [256]
+  Elements: 256
+  Memory: 0.00 MB
+  Sparsity: 0.00%
+  L1 Norm: 1.762e+01
+  L2 Norm: 1.501e+00
+  Entropy: 4.867
+  Compressibility Score: 0.090
+
+Parameter: layer3.0.downsample.1.weight
+  Shape: [256]
+  Elements: 256
+  Memory: 0.00 MB
+  Sparsity: 0.00%
+  L1 Norm: 2.102e+01
+  L2 Norm: 1.460e+00
+  Entropy: 4.619
+  Compressibility Score: 0.000
+
+Parameter: layer3.1.bn1.bias
+  Shape: [256]
+  Elements: 256
+  Memory: 0.00 MB
+  Sparsity: 0.00%
+  L1 Norm: 6.136e+01
+  L2 Norm: 4.255e+00
+  Entropy: 4.787
+  Compressibility Score: 0.000
+
+Parameter: layer3.1.bn1.weight
+  Shape: [256]
+  Elements: 256
+  Memory: 0.00 MB
+  Sparsity: 0.00%
+  L1 Norm: 7.122e+01
+  L2 Norm: 4.538e+00
+  Entropy: 4.871
+  Compressibility Score: 0.000
+
+Parameter: layer3.1.bn2.bias
+  Shape: [256]
+  Elements: 256
+  Memory: 0.00 MB
+  Sparsity: 0.00%
+  L1 Norm: 4.596e+01
+  L2 Norm: 3.538e+00
+  Entropy: 4.806
+  Compressibility Score: 0.039
+
+Parameter: layer3.1.bn2.weight
+  Shape: [256]
+  Elements: 256
+  Memory: 0.00 MB
+  Sparsity: 0.00%
+  L1 Norm: 6.294e+01
+  L2 Norm: 4.379e+00
+  Entropy: 5.146
+  Compressibility Score: 0.000
+
+Parameter: layer3.1.conv1.weight
+  Shape: [256, 256, 3, 3]
+  Elements: 589824
+  Memory: 2.25 MB
+  Sparsity: 0.00%
+  L1 Norm: 1.503e+01
+  L2 Norm: 6.240e-01
+  Entropy: 4.534
+  Compressibility Score: 0.083
+
+Parameter: layer3.1.conv2.weight
+  Shape: [256, 256, 3, 3]
+  Elements: 589824
+  Memory: 2.25 MB
+  Sparsity: 0.00%
+  L1 Norm: 1.734e+01
+  L2 Norm: 6.949e-01
+  Entropy: 4.779
+  Compressibility Score: 0.086
+
+Parameter: layer4.0.bn1.bias
+  Shape: [512]
+  Elements: 512
+  Memory: 0.00 MB
+  Sparsity: 0.00%
+  L1 Norm: 1.159e+02
+  L2 Norm: 5.407e+00
+  Entropy: 4.611
+  Compressibility Score: 0.004
+
+Parameter: layer4.0.bn1.weight
+  Shape: [512]
+  Elements: 512
+  Memory: 0.00 MB
+  Sparsity: 0.00%
+  L1 Norm: 1.353e+02
+  L2 Norm: 6.037e+00
+  Entropy: 4.569
+  Compressibility Score: 0.000
+
+Parameter: layer4.0.bn2.bias
+  Shape: [512]
+  Elements: 512
+  Memory: 0.00 MB
+  Sparsity: 0.00%
+  L1 Norm: 1.017e+02
+  L2 Norm: 4.710e+00
+  Entropy: 4.564
+  Compressibility Score: 0.000
+
+Parameter: layer4.0.bn2.weight
+  Shape: [512]
+  Elements: 512
+  Memory: 0.00 MB
+  Sparsity: 0.00%
+  L1 Norm: 2.173e+02
+  L2 Norm: 9.724e+00
+  Entropy: 4.429
+  Compressibility Score: 0.000
+
+Parameter: layer4.0.conv1.weight
+  Shape: [512, 256, 3, 3]
+  Elements: 1179648
+  Memory: 4.50 MB
+  Sparsity: 0.00%
+  L1 Norm: 1.481e+01
+  L2 Norm: 5.950e-01
+  Entropy: 5.019
+  Compressibility Score: 0.079
+
+Parameter: layer4.0.conv2.weight
+  Shape: [512, 512, 3, 3]
+  Elements: 2359296
+  Memory: 9.00 MB
+  Sparsity: 0.00%
+  L1 Norm: 1.369e+01
+  L2 Norm: 5.632e-01
+  Entropy: 4.361
+  Compressibility Score: 0.075
+
+Parameter: layer4.0.downsample.0.weight
+  Shape: [512, 256, 1, 1]
+  Elements: 131072
+  Memory: 0.50 MB
+  Sparsity: 0.00%
+  L1 Norm: 2.471e+01
+  L2 Norm: 1.066e+00
+  Entropy: 4.060
+  Compressibility Score: 0.095
+
+Parameter: layer4.0.downsample.1.bias
+  Shape: [512]
+  Elements: 512
+  Memory: 0.00 MB
+  Sparsity: 0.00%
+  L1 Norm: 1.017e+02
+  L2 Norm: 4.710e+00
+  Entropy: 4.564
+  Compressibility Score: 0.000
+
+Parameter: layer4.0.downsample.1.weight
+  Shape: [512]
+  Elements: 512
+  Memory: 0.00 MB
+  Sparsity: 0.00%
+  L1 Norm: 1.285e+02
+  L2 Norm: 5.929e+00
+  Entropy: 4.745
+  Compressibility Score: 0.000
+
+Parameter: layer4.1.bn1.bias
+  Shape: [512]
+  Elements: 512
+  Memory: 0.00 MB
+  Sparsity: 0.00%
+  L1 Norm: 1.241e+02
+  L2 Norm: 5.973e+00
+  Entropy: 4.974
+  Compressibility Score: 0.004
+
+Parameter: layer4.1.bn1.weight
+  Shape: [512]
+  Elements: 512
+  Memory: 0.00 MB
+  Sparsity: 0.00%
+  L1 Norm: 1.478e+02
+  L2 Norm: 6.628e+00
+  Entropy: 4.704
+  Compressibility Score: 0.000
+
+Parameter: layer4.1.bn2.bias
+  Shape: [512]
+  Elements: 512
+  Memory: 0.00 MB
+  Sparsity: 0.00%
+  L1 Norm: 1.402e+02
+  L2 Norm: 6.467e+00
+  Entropy: 4.694
+  Compressibility Score: 0.000
+
+Parameter: layer4.1.bn2.weight
+  Shape: [512]
+  Elements: 512
+  Memory: 0.00 MB
+  Sparsity: 0.00%
+  L1 Norm: 9.492e+02
+  L2 Norm: 4.202e+01
+  Entropy: 4.557
+  Compressibility Score: 0.000
+
+Parameter: layer4.1.conv1.weight
+  Shape: [512, 512, 3, 3]
+  Elements: 2359296
+  Memory: 9.00 MB
+  Sparsity: 0.00%
+  L1 Norm: 1.493e+01
+  L2 Norm: 6.169e-01
+  Entropy: 4.644
+  Compressibility Score: 0.107
+
+Parameter: layer4.1.conv2.weight
+  Shape: [512, 512, 3, 3]
+  Elements: 2359296
+  Memory: 9.00 MB
+  Sparsity: 0.00%
+  L1 Norm: 8.847e+00
+  L2 Norm: 3.568e-01
+  Entropy: 4.947
+  Compressibility Score: 0.086
+
+NODE-BY-NODE COMPUTATIONAL ANALYSIS
+----------------------------------------
+Node: Reshape_1 (aten::flatten)
+  Type: Reshape
+  Theoretical FLOPs: 0
+  Memory Accesses: 0
+  Arithmetic Intensity: 0.000
+  Parameters: 0
+  Memory: 0.00 MB
+  Pruning Potential: 30.0%
+  Quantization Sensitivity: 40.0%
+  Energy per Operation: 0.000e+00 nJ
+  Optimization Recommendations:
+    - Memory-bound operation - consider data layout optimization
+
+DETAILED PROFILING RESULTS
+----------------------------------------
+Operation: complete_forward_pass
+  Execution Time: 79.621 ms
+  Theoretical FLOPs: 0
+  Throughput: 12.56 ops/sec
+  Energy Consumption: 7.962e-05 J
+  Power Consumption: 0.000 W
+  FLOP Utilization: 0.00%
+  Total Memory: 0.58 MB
+
