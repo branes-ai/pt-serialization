@@ -4,8 +4,35 @@ project(direct_pytorch_parser)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# Set path for libtorch
-set(CMAKE_PREFIX_PATH "C:/iree/libtorch")
+# -----------------------------------------------------------
+# 1. Define a user-settable directory path option
+# -----------------------------------------------------------
+#
+# We use a CACHE variable of type PATH, which makes it
+# a user-configurable option in CMake GUI and command-line.
+# The user can set this variable to a path where your
+# dependency (e.g., a library like Boost, Qt, etc.) is installed.
+#
+# The default value is an empty string, but you can set a default
+# path if you have a common location where you expect the dependency
+# to be.
+#
+# NOTE: The "docstring" is a helpful description that appears in CMake GUI.
+set(LIBTORCH_DIR "C:/iree/libtorch" CACHE PATH "Path to a custom installation of LibTorch)")
+
+# -----------------------------------------------------------
+# 2. Append the user-provided path to CMAKE_PREFIX_PATH
+# -----------------------------------------------------------
+#
+# We check if the MY_DEPENDENCY_PATH variable is set and not empty.
+# If it is, we append it to CMAKE_PREFIX_PATH.
+#
+# The `list(APPEND ...)` command is the preferred way to add
+# a path to a list-like variable in CMake.
+if(LIBTORCH_DIR)
+    message(STATUS "Adding custom dependency path to CMAKE_PREFIX_PATH: ${LIBTORCH_DIR}")
+    list(APPEND CMAKE_PREFIX_PATH "${LIBTORCH_DIR}")
+endif()
 
 # Find PyTorch
 find_package(Torch REQUIRED)
